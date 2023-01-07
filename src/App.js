@@ -1,23 +1,61 @@
-import logo from './logo.svg';
+
 import './App.css';
+import * as React from 'react';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import { BiCheck } from "react-icons/bi";
+import { FiX } from "react-icons/fi";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='pricing'>
+      <Card className='Card'>
+      <Card.Body>
+        <Card.Title className='text-muted'>FREE</Card.Title>
+        <h3 className="pricers">$0<small className='month'>/month</small></h3>
+        <Card.Text className='cardtext'><BiCheck />Single User</Card.Text>
+        <Card.Text className='cardtext'><BiCheck />5GB Storage</Card.Text>
+        <Card.Text className='cardtext'><BiCheck />Unlimited Public Projects</Card.Text>
+        <Card.Text className='cardtext'><BiCheck />Community Access</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Unlimited Private Projects</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Dedicated Phone support</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Free subdomain</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Monthly Status Report</Card.Text>
+        <Button className='button'>Buy</Button>
+      </Card.Body>
+    </Card>
+    <Card className='Card'>
+      <Card.Body>
+        <Card.Title className='text-muted'>FREE</Card.Title>
+        <h3 className="pricers">$0<small className='month'>/month</small></h3>
+        <Card.Text className='cardtext'><BiCheck />Single User</Card.Text>
+        <Card.Text className='cardtext'><BiCheck />5GB Storage</Card.Text>
+        <Card.Text className='cardtext'><BiCheck />Unlimited Public Projects</Card.Text>
+        <Card.Text className='cardtext'><BiCheck />Community Access</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Unlimited Private Projects</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Dedicated Phone support</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Free subdomain</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Monthly Status Report</Card.Text>
+        <Button className='button'>Buy</Button>
+      </Card.Body>
+    </Card>
+    <Card className='Card'>
+      <Card.Body>
+        <Card.Title className='text-muted'>FREE</Card.Title>
+        <h3 className="pricers">$0<small className='month'>/month</small></h3>
+        <Card.Text className='cardtext'><BiCheck />Single User</Card.Text>
+        <Card.Text className='cardtext'><BiCheck />5GB Storage</Card.Text>
+        <Card.Text className='cardtext'><BiCheck />Unlimited Public Projects</Card.Text>
+        <Card.Text className='cardtext'><BiCheck />Community Access</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Unlimited Private Projects</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Dedicated Phone support</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Free subdomain</Card.Text>
+        <Card.Text className='cardtext  text-muted'><FiX />Monthly Status Report</Card.Text>
+        <Button className='button'>Buy</Button>
+      </Card.Body>
+    </Card>
+    </div>
     </div>
   );
 }
